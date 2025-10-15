@@ -1,15 +1,16 @@
 # Use super() in a subclass to extend a method.
 
 class Parent:
-    def greet(self):
+    def introduce(self):
         print("Hello from Parent!")
 
 
 class Child(Parent):
-    def greet(self):
-        super().greet()  
+    def introduce(self):
+        super().introduce()  
         print("Hello from Child!")
 
 
 c = Child()
-c.greet()
+c.introduce()
+
